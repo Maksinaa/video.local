@@ -19,6 +19,7 @@ class VideoController extends Controller
         // получение всех видиофайлов пользователя
         // отсортированных по лайкам
         $items = Video::where('user_id', Auth::id())
+            ->where('restrictions', '!=', 'Бан')
             ->orderByDesc('likes')
             ->orderBy('dislikes')
             ->get();

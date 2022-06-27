@@ -51,7 +51,7 @@ class UserFactory extends Factory
                     'name' => 'admin',
                     'email' => 'admin@test.ru',
                     'role' => 'admin',
-                    // 'password' => bcrypt('oiSD$83s4Fda23d_S23'),
+                    'password' => bcrypt('oiSD$83s4Fda23d_S23'),
 
                 ];
             }

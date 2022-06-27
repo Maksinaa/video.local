@@ -1,7 +1,9 @@
 @auth
-  <li class="nav-item">
-    <a class="nav-link" href="{{ route('videos.index') }}">Мое видео</a>
-  </li>
+  @can('user')
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('videos.index') }}">Мое видео</a>
+    </li>
+  @endcan
 @endauth
 
 
