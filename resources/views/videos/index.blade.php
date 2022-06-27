@@ -45,7 +45,7 @@
             </h6>
             <p class="card-text">{{ $item->description }}</p>
             <a href="{{ route('videos.show', $item->id) }}" class="btn btn-primary stretched-link">Смотреть</a>
-            <span class="float-end">{{ $item->restrictions }}</span>
+
           </div>
         </div>
       @empty

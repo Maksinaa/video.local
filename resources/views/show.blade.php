@@ -49,7 +49,7 @@
           <p class="card-text">{{ $item->description }}</p>
 
 
-          {{-- <span class="float-end">{{ $item->restrictions }}</span> --}}
+
         </div>
       </div>
 

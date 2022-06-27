@@ -46,7 +46,7 @@
             {{ $item->dislikes }}
           </span>
 
-          <span class="float-end">{{ $item->restrictions }}</span>
+          {{-- <span class="float-end">{{ $item->restrictions }}</span> --}}
           <p class="card-text">{{ $item->description }}</p>
         </div>
       </div>

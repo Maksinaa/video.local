@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
         User::factory()
             ->count(1)
             ->user()
-            ->hasVideos(25)
+            ->hasVideos(15)
             ->hasComments(10)
             ->create();
     }

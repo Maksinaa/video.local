@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\VideoRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Video;
@@ -46,7 +46,7 @@ class VideoController extends Controller
      *
      * @return RedirectResponse перенаправление
      */
-    public function store(Request $request)
+    public function store(VideoRequest $request)
     {
         // подключаем диск с именем public
         $disk = Storage::disk('public');

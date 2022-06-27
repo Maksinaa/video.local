@@ -15,7 +15,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-
+        // получение 10 последних аудиофайлов пользователя
         // отсортированных по лайкам
         $items = Video::where('restrictions', 'Без ограничений')
             ->orderByDesc('created_at')
